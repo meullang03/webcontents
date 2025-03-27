@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>survey</title>
+  </head>
+  <body>
+    <h3>설문지</h3>
+    소프트웨어 기술에 대한 의견을 듣습니다. 많은 참여 부탁드립니다.
+    <hr>
+    <form>
+        <label>
+            학년: 
+            1학년<input type="radio" name="grade" value="1" checked>
+            2학년<input type="radio" name="grade" value="2">
+            3학년<input type="radio" name="grade" value="3">
+        </label><br>
+        <label>
+            성별:
+            남성 <input type="radio" name="sex" value="1">
+            여성 <input type="radio" name="sex" value="2" checked>
+        </label>
+    </form>
+    <form>
+        관심분야: <input type="text" list="관심분야">
+        <datalist id="관심분야">
+            <option>k-pop 밴드</option>
+            <option>k-pop 아이돌</option>
+            <option>수어 종교수어</option>
+            <option>수어 수화통역사</option>
+        </datalist>
+    </form>
+    <form>
+        진로:
+        개발 <input type="checkbox" value="1">
+        기획 <input type="checkbox" value="2">
+        영업 <input type="checkbox" value="3">
+        창업 <input type="checkbox" value="4">
+    </form>
+    <form>
+        남기고 싶은 말
+        <textarea></textarea>
+    </form>
+
+    
+  </body>
+</html>
