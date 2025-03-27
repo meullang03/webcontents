@@ -1,0 +1,83 @@
+<!-- form
+ name: 폼의 이름 지정을 하는 속성
+ action: 폼 데이터를 처리할 웹 서버 응용 프로그램 이름
+ submit 버튼이 눌리면 브라우저는 action에 지정된 서버 응용프로그램 실행을 요청함
+ method: 폼 데이터를 웹 서버로 전송하는 방식 (get, post) -->
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>0327_internet</title>
+  </head>
+  <body>
+   <h3>로그인 폼</h3>
+   <hr>
+   <form name="fo" method="get">
+    사용자 ID: <input type="text" size="15" value=""><br>
+    비밀번호: <input type="password" size="15" value="">
+    <input type="submit" value="완료">
+   </form>
+   <hr>
+   <h3>자기소개서 작성</h3>
+   <hr>
+   <form>
+    이름: <input type="text" value=""><br>
+    암호: <input type="password" value="" maxlength="4"><br>
+    자소서: <textarea cols="20" rows="5">이곳에 자기소개서 작성</textarea>
+   </form>
+   <hr>
+   <h3>가보고 싶은 곳</h3>
+   <hr>
+   <form>
+    나라: <input type="text" list="countries"> <br>
+    <datalist id="countries">
+      <option value="가나"></option>
+      <option value="스위스"></option>
+      <option value="브라질"></option>
+    </datalist>
+    보고 싶은 것: <input type="text" list="what"><br>
+    <datalist id="what">
+      <option value="산"></option>
+      <option value="바다"></option>
+      <option value="도시"></option>
+    </datalist>
+   </form>
+
+   <hr>
+   <h3>버튼을 만들자!</h3>
+   <hr>
+   <form>
+    검색: <input type="text" size="10" value="">
+    <input type="button" value="Q1">
+    <button type="button">Q2</button><br>
+    submit 버튼: <input type="submit" value="전송1">
+    <button type="submit">전송2</button>
+    reset 버튼: <input type="reset" value="리셋1">
+    <button type="reset">리셋2</button>
+    이미지 버튼: <input type="image" src="media/button.png" alt="이미지 버튼" width="80">
+    <button type="button"><img src="media/button.png" alt="이미지 버튼" width="80">
+    </button>
+   </form>
+
+   <h3>체크박스 만들기</h3>
+   <hr>
+   <form>
+    짜장면 <input type="checkbox" value="1">
+    짬뽕 <input type="checkbox" value="2" checked>
+    탕수육 <input type="checkbox" value="3">
+   </form>
+
+   <h3>하나만 선택하는 radio 태그</h3>
+   <hr>
+   <form>
+    <input type="radio" name="china" value="1">
+      짜장면<img src="media/jajang.png" width="100">
+      <input type="radio" name="china" value="2" checked>
+      짬뽕<img src="media/jjambbong.png" width="100">
+      <input type="radio" name="china" value="3">
+      탕수육<img src="media/tangsuyuk.png" width="100">
+   </form>
+  </body>
+</html>
