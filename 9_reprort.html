@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>8주차 레포트</title>
+        <style>
+        @import url(/style_sheet.css);
+        @font-face {
+        font-family: 'HMFMPYUN';
+        src: url(./HMFMPYUN.TTF);
+      }
+      
+      body {
+        background-color: aliceblue;
+      }
+      h1 {
+        color: brown;
+        text-align: center;
+      }
+      p {
+        font-family: HMFMPYUN;
+        font-size: 1em;
+        text-indent: 1em;
+      }
+      a {
+        text-decoration: none;
+      }
+      .h3 {
+        color: white;
+        text-shadow: 0px 0px 5px magenta; 
+      }
+      #round {
+        background-color: orange;
+        border-radius: 50px 50px; 
+        padding: 5px;
+      }
+      #align{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>최하진</h1>
+      <hr />
+      <p>
+        안녕하세요 제 이름은 최하진입니다. 현재 명지전문대학 컴퓨터공학과 1학년 재학
+        중입니다.<br />
+        제가 좋아하는 색은 <b style="color: magenta">분홍색</b>이어서, 분홍색으로 페이지를 꾸며보았습니다! :>
+      </p>
+      <audio src="media/intro.mp3" controls></audio>
+    </header>
+    <br />
+    <hr />
+    <nav>
+      <h3 class="h3">목차</h3>
+    </nav>
+    <ul style="border: 1px dotted magenta">
+      <li><a href="#think">관심분야</a></li>
+      <li><a href="#hobby">취미활동</a></li>
+      <li><a href="#time">강의 시간표</a></li>
+      <li><a href="#survey">설문지</a></li>
+    </ul>
+
+    <br />
+    <section>
+      <article id="think">
+        <h3 class="h3">관심분야</h3>
+        <hr />
+        <ul>
+          <li>K-pop</li>
+          <ul>
+            <li>게임</li>
+            <ul>
+              <li>오버워치</li>
+              <li>동물의 숲</li>
+            </ul>
+            <li>아이돌</li>
+            <ul>
+              <li>BOYNEXTDOOR</li>
+              <li>G-friend</li>
+            </ul>
+          </ul>
+        </ul>
+        <ul >
+          <li>수화</li>
+          <ul>
+            <li>수화통역사</li>
+            <li>기독교 수어</li>
+            <li>수어로 노래하기</li>
+          </ul>
+        </ul>
+      </article>
+      <br />
+      <article id="hobby">
+        <h3 class="h3">취미 활동</h3>
+        <hr />
+        <table border="1">
+          <tr>
+            <td><img src="media/img.png" width="120" /></td>
+            <td><img src="media/walk.png" width="120" /></td>
+            <td><img src="media/youtube.png" width="120" /></td>
+            <td><img src="media/overwatch.png" width="120" /></td>
+          </tr>
+          <tr id="align">
+            <td>그림 그리기</td>
+            <td>산책하기</td>
+            <td>유튜브 시청</td>
+            <td>게임하기</td>
+          </tr>
+        </table>
+      </article>
+      <br />
+      <article id="time">
+        <hr />
+        <h3 class="h3 ">강의 시간표(2025 1학기)</h3>
+        <table border="2">
+          <thead>
+            <tr>
+              <th>구분</th>
+              <th>월</th>
+              <th>화</th>
+              <th>수</th>
+              <th>목</th>
+              <th>금</th>
+              <th>토</th>
+            </tr>
+          </thead>
+          <tr id="align">
+            <td>10</td>
+            <td rowspan="9"></td>
+            <td rowspan="3">
+              프로그래밍<br/>
+              언어실습I<br />
+              공603
+            </td>
+            <td rowspan="3"></td>
+            <td rowspan="3">
+              컴퓨터<br> 
+              과학개론<br />
+              공507
+            </td>
+            <td rowspan="7"></td>
+            <td rowspan="2"></td>
+          </tr>
+          <tr id="align">
+            <td>11</td>
+          </tr>
+          <tr id="align">
+            <td>12</td>
+            <td rowspan="3">
+              봉사하는 삶<br />
+              사B101
+            </td>
+          </tr>
+          <tr id="align">
+            <td>13</td>
+            <td></td>
+            <td rowspan="2">
+              SW 개발문제해결능력<br />
+              공609
+            </td>
+            <td></td>
+          </tr>
+          <tr id="align">
+            <td>14</td>
+            <td rowspan="2">컴퓨팅 사고력<br />공608</td>
+            <td rowspan="3">인터넷 콘텐츠<br />공615</td>
+          </tr>
+          <tr id="align"s>
+            <td>15</td>
+            <td rowspan="4"></td>
+            <td rowspan="3"></td>
+          </tr>
+          <tr id="align">
+            <td>16</td>
+            <td rowspan="2"></td>
+          </tr>
+          <tr id="align">
+            <td>17</td>
+            <td></td>
+            <td>
+              인성채플<br />
+              공B101
+            </td>
+          </tr>
+        </table>
+      </article>
+      <article id="survey">
+    </section>
+    <br>
+    <footer id="round">
+      <p>
+        <a class="survey" href="/survey.html" target="_blank">설문조사</a></p>
+      <p>
+        2025.04.11 작성
+      </p>
+    </footer>
+    </article>
+  </body>
+</html>
