@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex-18css</title>
+    <style>
+      #menubar {
+        background: olive;
+      }
+      #menubar ul {
+        /* 여백과 패딩 모두 0 */
+        margin: 0;
+        padding: 0;
+        width: 567px; /* 모든 아이템을 <li> 한 줄에 품을 수 있는 폭 */
+      }
+      #menubar ul li {
+        /* 새로운 줄로 넘어가지 않게 inline-block 부여 */
+        display: inline-block;
+        /* 마커 삭제 */
+        list-style-type: none;
+        /* top=bottom=0px, left=right=15px */
+        padding: 0px 15px;
+      }
+      #menubar ul li a {
+        color: white;
+        /* 링크 보이지 않게 */
+        text-decoration: none;
+      }
+      #menubar ul li a:hover {
+        /* 마우스 올라갈 때 색 */
+        color: violet;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="menubar">
+      <ul>
+        <li>
+          <a href="http://www.starbucks.co.kr/">Home</a>
+        </li>
+        <li><a href="#">Espresso</a></li>
+        <li><a href="#">Cappuccino</a></li>
+        <li><a href="#">Cafe Latte</a></li>
+        <li><a href="#">F,A,Q</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
